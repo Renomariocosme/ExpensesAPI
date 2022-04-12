@@ -11,3 +11,8 @@ Spring e sua respectiva biblioteca
 
 Achou interessante? Entre em contato comigo.
 
+Será acrescentado a medida da construção:
+
+Mensageria
+Testes Unitários
+
