@@ -2,9 +2,12 @@ package com.simplescode.domain;
 
 import java.time.LocalDate;
 
+import org.springframework.data.annotation.Id;
+
 //classe referente ao dominio da aplicação
 public class Expense {
-
+	
+	@Id
 	private Long id;
 	private String description;
 	private LocalDate date;
