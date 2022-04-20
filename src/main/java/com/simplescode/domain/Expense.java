@@ -2,6 +2,9 @@ package com.simplescode.domain;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.annotation.Id;
 
 //classe referente ao dominio da aplicação
@@ -9,9 +12,12 @@ public class Expense {
 	
 	@Id
 	private Long id;
+	@NotEmpty
 	private String description;
+	@NotNull
 	private LocalDate date;
-	private double value;
+	private Double value;
+	@NotNull
 	private Category category;
 	
 	public Long getId() {
@@ -32,13 +38,13 @@ public class Expense {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-	public double getValue() {
+		public Double getValue() {
 		return value;
 	}
-	public void setValue(double value) {
+	public void setValue(Double value) {
 		this.value = value;
 	}
-	public Category getCategory() {
+		public Category getCategory() {
 		return category;
 	}
 	public void setCategory(Category category) {
